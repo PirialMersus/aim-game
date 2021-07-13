@@ -90,3 +90,14 @@ function setColor(element) {
   element.style.backgroundColor = color;
   element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
 }
+
+function winTheGame() {
+  function kill() {
+    const circle = document.querySelector(".circle");
+    if (circle) {
+      circle.click();
+    }
+  }
+
+  setInterval(kill, 50);
+}
